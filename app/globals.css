@@ -25,3 +25,266 @@ body {
     )
     rgb(var(--background-start-rgb));
 }
+
+/* styles/globals.css */
+.hero {
+  position: relative;
+  background: linear-gradient(to right, #1a2980, #26d0ce);
+  color: #fff;
+  text-align: center;
+  padding: 5rem 0;
+  overflow: hidden;
+}
+
+.hero-content {
+  max-width: 800px;
+  margin: 0 auto;
+  z-index: 2;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.hero button {
+  background-color: #26d0ce;
+  color: #fff;
+  padding: 1rem 2rem;
+  font-size: 1.2rem;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.hero-image {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50%;
+  height: 100%;
+  z-index: 1;
+}
+
+.hero-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.features {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 4rem 0;
+}
+
+.feature {
+  text-align: center;
+  max-width: 300px;
+  margin: 1rem;
+  padding: 2rem;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.feature:hover {
+  transform: scale(1.05);
+}
+
+.feature img {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 1rem;
+}
+
+.how-it-works {
+  text-align: center;
+  padding: 4rem 0;
+}
+
+.steps {
+  display: flex;
+  justify-content: space-around;
+}
+
+.step {
+  flex: 1;
+  margin: 2rem;
+  padding: 2rem;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.step:hover {
+  transform: scale(1.05);
+}
+
+.step-number {
+  background-color: #26d0ce;
+  color: #fff;
+  font-size: 2rem;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.step-content h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+/* styles/globals.css */
+.app-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 2rem;
+  background-color: #f8f8f8; /* Updated to a more subtle background color */
+  color: #333; /* Updated text color */
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Added a subtle shadow */
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+
+.logo span {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+}
+
+nav ul li {
+  margin-right: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #333;
+  font-size: 1rem;
+  transition: color 0.3s ease-in-out;
+}
+
+nav a:hover {
+  color: #26d0ce;
+}
+
+.user-auth button {
+  background-color: #26d0ce;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  margin-left: 10px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.user-auth button:hover {
+  background-color: #1a2980;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .app-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  nav {
+    margin-top: 1rem;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  nav ul li {
+    margin: 0;
+    margin-bottom: 10px;
+  }
+}
+
+/* styles/globals.css */
+.image-page {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.image-page h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.image-upload {
+  margin-bottom: 1rem;
+}
+
+.image-upload label {
+  display: block;
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.image-upload input {
+  border: 1px solid #ccc;
+  padding: 0.5rem;
+}
+
+.image-upload img {
+  max-width: 100%;
+  margin-top: 1rem;
+}
+
+.generate-btn {
+  background-color: #26d0ce;
+  color: #fff;
+  padding: 0.8rem 1.5rem;
+  font-size: 1rem;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+}
+
+.generated-image {
+  margin-top: 2rem;
+}
+
+.generated-image h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.generated-image img {
+  max-width: 100%;
+  margin-top: 1rem;
+}
